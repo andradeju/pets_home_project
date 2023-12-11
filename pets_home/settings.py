@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-r0y57c1#)_6v0tcy9x!6)x5)rj8w0f9=&uqfpf1nkqla4@)2hj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['JulianaSantos.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -49,7 +49,7 @@ ROOT_URLCONF = 'pets_home.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['projeto_pets_home/templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,17 +115,22 @@ USE_I18N = True
 USE_TZ = True
 
 
-MEDIA_ROOT = '/home/JulianaSantos/pets_home_project/media'
-MEDIA_URL = '/media/'
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "base/static",
-    
+    BASE_DIR / "static",
 ]
+
+
+# ... outras configurações ...
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(settings.BASE_DIR, 'media')
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
