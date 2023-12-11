@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+from django.conf import settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,7 +15,7 @@ SECRET_KEY = 'django-insecure-r0y57c1#)_6v0tcy9x!6)x5)rj8w0f9=&uqfpf1nkqla4@)2hj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['JulianaSantos.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -127,7 +128,7 @@ STATICFILES_DIRS = [
 # ... outras configurações ...
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '../media')
+MEDIA_ROOT = os.path.join(settings.BASE_DIR, 'media')
 
 
 
