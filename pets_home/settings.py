@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-r0y57c1#)_6v0tcy9x!6)x5)rj8w0f9=&uqfpf1nkqla4@)2hj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -121,8 +121,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "base/static",
 ]
-# Diretório no qual o collectstatic reunirá os arquivos estáticos
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles'),
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"
