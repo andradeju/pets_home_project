@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% load bootstrap5 %}
+{% load static %}
+{% block content %}
+
+<h1 class="text-center">Adote!</h1>
+<h3>Nossos Animais</h3>
+<p>
+  Descubra o seu futuro companheiro entre os animais listados abaixo. Clique no
+  botão 'Quero Adotar' para obter detalhes adicionais e preencher nosso
+  formulário de adoção
+</p>
+<div class="row">
+  {% for animal in animais %}
+  <div class="mb-4 mt-4 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+    <div class="card mt-2 card-adocao" style="width: 12rem">
+      <a href="{% url 'animal_detalhes' animal.id %}">
+        <img src="{{ animal.imagem.url }}" class="card-img-top" alt="animal" />
+      </a>
+      <div class="card-body">
+        <h3 class="h5 card-title text-center">{{ animal.nome }}</h3>
+        <p class="small card-text text-center">
+          <strong>Idade:</strong> {{ animal.idade }} anos<br />
+          <a href="{% url 'animal_detalhes' animal.id %}" class="mt-1 btn-adocao btn btn-primary btn-sm px-2">Quero
+            adotar
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

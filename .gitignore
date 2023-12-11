@@ -1,0 +1,46 @@
+# Ambientes 
+*.env
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/
+venv.bak/
+Lib/site-packages/
+*.exe
+Scripts/activate
+
+
+
+
+# Arquivos compilados
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos de logs
+*.log
+*.log
+activate.bat
+activate.ps1
+deactivate.bat
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+
+
+
+# Python 
+*.py[cod]
+*$py.class

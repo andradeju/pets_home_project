@@ -1,0 +1,60 @@
+{% extends "layout.html" %} 
+{% load bootstrap5 %} 
+
+{% block content %}
+{% if erro %}
+<div class="row">
+  <div class="mt-3 col-md-8 col-12 mx-auto">
+    <div class="alert alert-danger">
+      <strong>Erro no formulário:</strong>
+      <ul>
+        {% for field, errors in form.errors.items %}
+          {% for error in errors %}
+            <li>{{ field }}: {{ errors|join:", " }}</li>
+          {% endfor %}
+        {% endfor %}  
+      </ul>
+    </div>
+  </div>
+</div>
+{% endif %}
+<div class="row">
+  <div class="col-md-10 col-12 mx-auto d-flex justify-content-center">
+    <div class="card mt-2 card-adocao" style="width: 22rem">
+      <img
+        src="{{ animal.imagem.url }}"
+        class="card-img-top img-thumbnail"
+        alt="animal para adoção"
+        style="width: 100%; height: auto;"
+      />
+      <div class="card-body">
+        <h3 class="h5 card-title text-center">{{ animal.nome }}</h3>
+        <p class="card-text">
+          <strong>Espécie:</strong> {{ animal.especie }}<br />
+          <strong>Idade:</strong> {{ animal.idade }} anos<br />
+          <strong>Raça:</strong> {{ animal.raca }}<br />
+          <strong>Gênero:</strong> {{ animal.get_genero_display }}<br />
+          <strong>Histórico de Saúde:</strong> {{ animal.historico_saude }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-12 mx-auto">
+<div class="card mt-4">
+  <div class="card-body">
+    <h1 class="text-body-emphasis text-center">Formulário de Adoção</h1>
+    <form action="" method="POST" id="form" class="small-form">
+      {% csrf_token %} 
+      {% bootstrap_form form %}
+      <button type="submit" class="btn btn-cadastro btn-primary btn-block">
+        Finalizar cadastro
+      </button>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}
