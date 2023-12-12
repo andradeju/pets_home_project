@@ -49,7 +49,7 @@ ROOT_URLCONF = 'pets_home.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,7 +128,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # ... outras configurações ...
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/JulianaSantos/pets_home_project/media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 

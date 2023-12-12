@@ -16,4 +16,6 @@ urlpatterns = [
     path('confirmacao/', confirmacao_cadastro_adocao, name='confirm_adocao'),
     path('api-auth/', include('rest_framework.urls')),
     path('apipets/', include('rest_api.urls', namespace='apipets'))
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
