@@ -6,12 +6,23 @@ Este projeto é parte do Bootcamp de Back-End da WoMakersCode e tem como objetiv
 
 O projeto final deste Bootcamp de Back-End visa consolidar e aplicar o conhecimento adquirido em GitHub, HTML5, CSS3, Bancos de Dados e o Framework Django.  
 
-## Tecnologias
+## 💻 Tecnologias
+<p align="left">
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="44" height="44" alt="python" />
+  
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="44" height="44"/>
 
-- **Python**
-- **Django**
-- **HTML5, CSS3 e Bootstrap**
-- **SQLite**
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" width="44" height="44" />
+
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" width="44" height="44" />
+
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="46" height="46" />
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="46" height="46" />
+<p align="left">
+Python | Django | HTML5 | CSS3 | Bootstrap | SQLite |
+</p>
+</p>
 
 
 ## Estrutura e Requisitos
