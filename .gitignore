@@ -37,11 +37,6 @@ deactivate.bat
 __pycache__/
 
 
-
-#static
-staticfiles/
-
-
 # Python 
 *.py[cod]
 *$py.class
