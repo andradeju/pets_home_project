@@ -36,6 +36,9 @@ deactivate.bat
 *.pyc
 __pycache__/
 
+#staticfiles
+staticfiles/js/
+
 
 # Python 
 *.py[cod]
