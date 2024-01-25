@@ -1,8 +1,8 @@
-# Projeto Abrigo de Animais | Pet's Home
+# 🐶 Projeto Abrigo de Animais | Pet's Home
 
 Este projeto é parte do Bootcamp de Back-End da WoMakersCode e tem como objetivo criar um site para um abrigo de animais utilizando Python e o framework Django aplicando as melhores práticas e conceitos de controle de versão.
 
-## Sobre o Projeto
+## 📂 Sobre o Projeto
 
 O projeto final deste Bootcamp de Back-End visa consolidar e aplicar o conhecimento adquirido em GitHub, HTML5, CSS3, Bancos de Dados e o Framework Django.  
 
@@ -24,8 +24,7 @@ Python | Django | HTML5 | CSS3 | Bootstrap | SQLite |
 </p>
 </p>
 
-
-## Estrutura e Requisitos
+## 📝 Estrutura e Requisitos
 
 O projeto inclui as seguintes funcionalidades:
 
@@ -34,11 +33,11 @@ O projeto inclui as seguintes funcionalidades:
 - **Gestão de Adoções**: Sistema de gerenciamento de adoções, onde os interessados podem solicitar a adoção de um animal e os responsáveis pelo abrigo podem aprovar ou recusar as solicitações.
 - **Barra de Pesquisa**: Barra de pesquisa que permite aos usuários procurar animais disponíveis para adoção por palavras-chave, espécie, raça, etc.
 
-## Deploy do Site
+## 🚀 Deploy do Site
 O site está disponível online, clique aqui: **[Pet's Home](https://julianasantos.pythonanywhere.com/)** <br>
 Visite o link para explorar as funcionalidades e conhecer os animais disponíveis para adoção.
 
-## Rodando o Projeto Localmente
+## ⌨️ Rodando o Projeto Localmente
 
 1. **Clone o Repositório:**
 ```bash
